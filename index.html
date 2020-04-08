@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <meta name="Todo List" content="To-Do List" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center text-light mb-4">TODO LIST</h1>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="New Task"
+          aria-label="New Task"
+          aria-describedby="button-addon2"
+          id="newTodo"
+          oninput="newInput()"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary bg-dark text-light"
+            type="button"
+            id="button-addon2 addTodo"
+            onclick="addTodo()"
+          >
+            Add To Your List
+          </button>
+        </div>
+      </div>
+      <ul class="todo-list list-group mt-4">
+        <li class="list-group-item">New items</li>
+        <li class="list-group-item">New items</li>
+        <!-- Your todo list goes here-->
+      </ul>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
