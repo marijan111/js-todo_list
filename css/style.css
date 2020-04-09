@@ -4,4 +4,16 @@ body {
   height: 100%;
   background-color: #0f2027;
   font-family: 'Courier New';
+  overflow: hidden;
+}
+
+.remove-btn {
+  float: right;
+  color: #6c757d;
+  font-size: 1.4em;
+}
+
+.remove-btn:hover {
+  color: #343a40;
+  cursor: pointer;
 }
